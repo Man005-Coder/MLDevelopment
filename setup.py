@@ -20,7 +20,7 @@ setup(
     author="Manthan Raval",
     author_email="manthanrraval@gmail.com",
     packages=find_packages(),
-    install_requires=get_requirements("requirement.txt"),
+    install_requires=get_requirements("requirements.txt"),
     description="My first model package to learn new things",
     python_requires=">=3.13.14",
 )
