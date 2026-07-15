@@ -27,8 +27,7 @@ class DataTransformation:
 
             categorical_cols = [
                 col for col in input_df.columns
-                if input_df[col].dtype == 'object'
-                or pd.api.types.is_categorical_dtype(input_df[col])
+                if not pd.api.types.is_numeric_dtype(input_df[col])
             ]
             numeric_cols = [col for col in input_df.columns if col not in categorical_cols]
 
